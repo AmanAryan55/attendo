@@ -18,11 +18,11 @@ public class SubEntity {
     private String subName;
     public int present;
     public int absent;
-
+    public  int total;
     public SubEntity() {
     }
 
-    public SubEntity(String ID, String subname, int present, int absent) {
+    public SubEntity(String ID, String subname, int present, int absent,int total) {
 
         if(ID==null)
         {
@@ -33,6 +33,7 @@ public class SubEntity {
         this.subName = subname;
         this.present = present;
         this.absent = absent;
+
     }
 
 
@@ -64,6 +65,7 @@ public class SubEntity {
     }
 
     public void setAbsent(int absent) {
+
         this.absent = absent;
     }
 
@@ -85,4 +87,7 @@ public class SubEntity {
                             ", Present='"+ present +
                             ", Absent='"+ absent + '}';
     }
+
+
+
 }

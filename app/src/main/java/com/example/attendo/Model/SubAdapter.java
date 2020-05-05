@@ -79,20 +79,20 @@ public class SubAdapter extends RecyclerView.Adapter<SubAdapter.MyViewHolder> {
                 mOnclick.OnAbsentClick(v,myViewHolder.getLayoutPosition());
             }
         });
-        SubEntity subEntity=new SubEntity();
-
-        int p=subEntity.getPresent();
-        int a= subEntity.getAbsent();
-        int tc=0;
-        int Percent =0;
-        tc=p + a;
-
-        if(tc!=0)
-            Percent = p*100 / tc;
-            else
-                Percent = 100;
-
-            myViewHolder.percent.setText(String.valueOf(Percent) + "%");
+//        SubEntity subEntity=new SubEntity();
+//
+//        int p=subEntity.getPresent();
+//        int a= subEntity.getAbsent();
+//        int tc=0;
+//        int Percent =0;
+//        tc=p + a;
+//
+//        if(tc!=0)
+//            Percent = p*100 / tc;
+//            else
+//                Percent = 100;
+//
+//            myViewHolder.percent.setText(String.valueOf(Percent) + "%");
     }
 
     @Override
